@@ -15,10 +15,8 @@ jobs:
         run: |
           docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
       
-      - name: Docker build and push
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          push: true
-          tags: github_docker_testing/workflowtest:latest 
+      - name: Docker build image
+        run: |
+          docker build -t jmcphillips15/github_docker_testing:latest -f ./dockerFileTest/Dockerfile
+
           

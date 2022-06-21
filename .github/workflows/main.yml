@@ -21,6 +21,8 @@ jobs:
       - name: docker push the image
         run: |
           docker push jmcphillips15/github_docker_testing:0.1
-          
+      - name: run the container
+        run: |
+          docker run -d -p 80:80 747ebb8e88bb8b10a0e14c1e1dc90b57b21e9123554c65350a088e326a6ad9ba
 
           

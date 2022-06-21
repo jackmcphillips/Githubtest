@@ -17,7 +17,10 @@ jobs:
           
       - name: docker build 
         run: |
-          docker build ./dockerfiles -t jmcphillips15/express:0.1
+          docker build ./dockerfiles -t jmcphillips15/github_docker_testing:0.1
+      - name: docker push the image
+        run: |
+          docker push jmcphillips15/github_docker_testing:0.1
           
 
           

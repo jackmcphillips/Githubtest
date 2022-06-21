@@ -14,9 +14,5 @@ jobs:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: |
           docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-      
-      - name: Docker build image
-        run: |
-          docker build -t jmcphillips15/github_docker_testing:latest -f ./dockerFileTest/Dockerfile
 
           

@@ -1,3 +1,3 @@
 FROM nginx:latest
 
-COPY index.html /usr/src/files
+COPY . /usr/bofa/deez

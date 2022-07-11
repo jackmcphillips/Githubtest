@@ -1,3 +1,3 @@
 FROM nginx:latest
 
-COPY dockerfiles/. /usr/share/nginx/html
+COPY Githubtest/dockerfiles /usr/share/nginx/html
